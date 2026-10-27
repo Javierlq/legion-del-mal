@@ -21,3 +21,21 @@ jobs:
                 echo ""
                 echo "URL del commit: ${{ github.event.head_commit.url }}"
                 echo "Mensaje del commit: ${{ github.event.head_commit.message }}" 
+
+            - name: Capacidades del agente
+              run: |
+                echo "Capacidades del agente: "
+                echo ""
+                echo "Sistema Operativo: $(uname -a)"
+                echo "Habilidades técnicas"
+                node --version
+                git --version
+                python3 --version
+
+            - name: Reconocimiento del terreno
+              run: |
+                echo "Reconocimiento del terreno: "
+                echo ""
+                echo "Directorio de trabajo: ${{ github.workspace }}"
+                echo "Archivos en el directorio: "
+                ls -la
