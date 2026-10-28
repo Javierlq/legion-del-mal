@@ -19,6 +19,16 @@ on:
           type: string
           default: "La misión fue un éxito"
 
+        cow_character:
+          description: "Personaje"
+          required: true
+          type: choice
+          options:
+              - eyes
+              - tux
+              - dragon
+              - ghostbusters
+              - king
 
         prioridad:
           description: "Nivel de prioridad"
