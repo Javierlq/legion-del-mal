@@ -13,6 +13,22 @@ on:
                 - Brainiac
                 - Lex Luthor
 
+        mensaje: 
+          description: "Mensaje a transmitir"
+          required: true
+          type: string
+          default: "La misión fue un éxito"
+
+
+        prioridad:
+          description: "Nivel de prioridad"
+          required: true
+          type: choice
+          options:
+              - Alta
+              - Media
+              - Baja
+
 jobs: 
     transmitir_mensaje:
         runs-on: ubuntu-latest
