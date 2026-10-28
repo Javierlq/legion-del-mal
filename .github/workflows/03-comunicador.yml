@@ -59,6 +59,6 @@ jobs:
               echo "Prioridad: ${{ github.event.inputs.prioridad }}"
               echo "Fecha: $(date -u + "%d/%m/%Y %H:%M:%S UTC")"
               echo "------- Mensaje --------------------------"
-              cowsay -f eyes "${{ github.event.inputs.mensaje }}"
+              cowsay cow_character="${{ github.event.inputs.cow_character }}" "${{ github.event.inputs.mensaje }}"
               echo " "
               echo "..."
