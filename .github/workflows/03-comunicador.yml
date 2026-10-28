@@ -1,0 +1,21 @@
+name: Comunicador de la Legion
+
+on:
+  workflow_dispatch:
+    inputs:
+        villano:
+            description: '¿Qué villano envía el mensaje?'
+            required: true
+            type: choice
+            options:
+                - Deathstroke
+                - Joker
+                - Brainiac
+                - Lex Luthor
+
+jobs: 
+    transmitir_mensaje:
+        runs-on: ubuntu-latest
+
+        steps:
+          - uses: actions/checkout@v4
