@@ -13,3 +13,21 @@ jobs:
                 ls -la
                 echo " "
                 echo "X pero qué pasó? NO hay nada"
+
+            - name: 'Brainiac desbloquea la bóveda'
+              uses: actions/checkout@v4
+
+            - name: 'Ahora sí, vamos a ver los planes'
+              run: |
+                echo "Agente ${{ github.actor }} ha accedido a la bóveda de la fortaleza Prohibida. Se requiere autorización para acceder a los archivos de la legión."
+                echo " "
+                echo "Buscar los archivos de la legión"
+                ls -la
+                echo " "
+                echo "Ahora sí, vamos a ver los planes"
+                echo "Planes"
+                ls planes/
+                echo "Villanos:"
+                ls miembros/
+                echo "Inteligencia:"
+                ls inteligencia/
