@@ -7,7 +7,7 @@ jobs:
         steps:
             - name: El agente llega a la fortaleza
               run: |
-                echo "Agente ${{ github.actor }} ha llegado a la fortaleza Prohibida. Se requiere autorización para acceder a las instalaciones.
+                echo "Agente ${{ github.actor }} ha llegado a la fortaleza Prohibida. Se requiere autorización para acceder a las instalaciones."
                 echo " "
                 echo "Buscar los archivos de la legión"
                 ls -la
